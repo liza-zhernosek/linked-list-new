@@ -24,11 +24,19 @@ class LinkedList {
   }
 
   head() {
-    return this._head.data;
+    if (this._head) {
+      return this._head.data;
+    } else {
+      return null;
+    }
   }
 
   tail() {
-    return this._tail.data;
+    if (this._tail) {
+      return this._tail.data;
+    } else {
+      return null;
+    }
   }
 
   _at(index) {
